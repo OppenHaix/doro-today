@@ -14,9 +14,9 @@ const 返回抽卡页面 = () => {
 <template>
   <div class="home">
     <h1>所有结局</h1>
-    <v-btn @click="返回抽卡页面()" class="v-btn">返回抽卡页面</v-btn>
+    <v-btn class="v-btn" @click="返回抽卡页面()"> 返回抽卡页面 </v-btn>
     <div class="ending-list">
-      <div class="ending-item" v-for="(ending, index) in endings" :key="index">
+      <div v-for="(ending, index) in endings" :key="index" class="ending-item">
         <v-img :src="ending.image" class="v-image" />
         <h2>{{ ending.title }}</h2>
         <p>{{ ending.description }}</p>
